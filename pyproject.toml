@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kenosha-hmm"
+version = "0.1.0"
+description = "Gaussian hidden Markov models with sequence training and grammar-constrained decoding"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Gianluca Vagliano"}]
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26,<3", "pandas>=2,<3"]
+
+[project.urls]
+Repository = "https://github.com/Kenosha/kenosha-hmm"
+Issues = "https://github.com/Kenosha/kenosha-hmm/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
